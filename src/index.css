@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #170d3f;
+  --btn: #6748f8;
+  --white: #ffffff;
+  --green: #36e3b9;
+  --red: #e62f5f;
+  --yellow: #f2ac32;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+}
+
+section.quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+section.quiz img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+section.quiz .quizname {
+  margin: 10px;
+  font-weight: 600;
+  color: var(--green);
+  letter-spacing: 2px;
+  font-size: 50px;
+
+}
+
+section.quiz .quizgame1 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-weight: 500;
+  color: var(--white);
+  letter-spacing: 1px;
+  font-size: 30px;
+
+}
+
+section.quiz .quizgame {
+  margin: 2px;
+  color: var(--white);
+  letter-spacing: 1px;
+  font-size: 20px;
+
+}
+
+section.btn-play {
+  margin: 15px 10px;
+}
+
+section.btn-play button {
+  position: relative;
+  cursor: pointer;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px 8px;
+  letter-spacing: 2px;
+  outline: none;
+  background-color: var(--btn);
+  border-radius: 6px;
+}
+
+section.btn-play button.btn1 {
+  border: none;
+}
+
+section.btn-play button.btn2 {
+  border: 1px solid #6748f8;
+  color: var(--btn);
+  background-color: unset;
+}
+
+/* home ends */
+
+/* question lines */
+section.lev {
+  padding: 10px;
+  color: var(--green);
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.lev .lv {
+  position: relative;
+  left: 5em;
+  font-size: 25px;
+}
+
+section.container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 8px;
+}
+
+section.container .q {
+  color: var(--green);
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+section.container .quest {
+  font-size: 16px;
+  color: var(--white);
+  padding: 10px;
+  margin: 5px 0px;
+}
+
+section.container .option {
+  margin: 18px 0px;
+}
+
+section.container .option .opt {
+  display: flex;
+  padding: 6px 5px;
+  margin: 5px;
+  color: var(--white);
+  border-radius: 6px;
+}
+
+section.container .option .opt.active {
+  background-color: var(--green);
+}
+
+section.container .option .opt .op {
+  margin-right: 10px;
+  background-color: var(--btn);
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--white);
+}
+
+section.container .option .opt .o {
+  padding: 10px 0px;
+  margin: 5px;
+}
+
+section.container .prevnext {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+section.container .prevnext button {
+  width: 35%;
+  padding: 15px;
+  font-size: 16px;
+  color: var(--white);
+  border: none;
+  background-color: var(--btn);
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* question */
+
+/* congrat */
+
+section.result {
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: center;
+  color: var(--green);
+}
+
+section.contain {
+  margin: 10px;
+}
+
+section.contain .con {
+  color: var(--white);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+section.contain .con .out {
+  color: var(--green);
+}
+
+section.contain .box {
+  background-color: var(--btn);
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+
+section.contain .box .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 20em;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+section.contain .box .info .final {
+  top: -40px;
+  font-size: 20px;
+  color: var(--white);
+  position: relative;
+}
+
+section.contain .box .info .no {
+  background-color: var(--yellow);
+  width: 100px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: var(--white);
+  justify-content: center;
+  border-radius: 50px;
+  height: 100px;
+}
+
+section.contain button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  margin: 20px auto;
+  background-color: var(--btn);
+  color: var(--white);
+}
+.loading{
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  left: 35%;
+}

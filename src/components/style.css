@@ -1,0 +1,54 @@
+/* Bulb animation */
+.bulb-container {
+    position: relative;
+}
+
+.bulb {
+    animation: glow 1s infinite alternate, moveLines 2s linear infinite;
+}
+
+/* Glow effect */
+@keyframes glow {
+    0% {
+        filter: drop-shadow(0 0 5px white);
+    }
+    100% {
+        filter: drop-shadow(0 0 20px white);
+    }
+}
+
+/* Moving lines animation (speed of light effect) */
+@keyframes moveLines {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Shake button */
+.shake {
+    animation: shakeAnimation 1s infinite;
+}
+
+@keyframes shakeAnimation {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+    }
+}
+
+/* Button hover effect */
+.btn1:hover {
+    background-color: #36e3b9;
+    transition: background-color 0.3s ease;
+}

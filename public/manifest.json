@@ -1,0 +1,61 @@
+{
+  "name": "Quiz Application",
+  "short_name": "QuizApp",
+  "description": "This is a quiz app where users learn.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#170d3f",
+  "theme_color": "#170d3f",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "orientation": "portrait",
+  "launch_handler": {
+    "client_mode": "chrome.tab"
+  },
+  "icons": [
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "bulb.svg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/svg+xml"
+    },
+
+    {
+      "src": "bulbss.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+
+    {
+      "src": "bulbss.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "com.example.quizapp",
+      "url": "https://play.google.com/store/apps/details?id=com.example.quizapp"
+    }
+  ],
+  "prefer_related_applications": false,
+  "categories": ["games", "education"],
+  "screenshots": [
+    {
+      "src": "screenshots/screenshot1.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/screenshot2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
