@@ -17,7 +17,7 @@ export default function Question() {
 
     const fetchQuestions = async () => {
         try {
-            const response = await fetch('https://opentdb.com/api.php?amount=100&category=9&type=multiple');
+            const response = await fetch('https://opentdb.com/api.php?amount=10&category=2&type=multiple');
             const data = await response.json();
             const formattedQuestions = data.results.map((q) => ({
                 question: q.question,
